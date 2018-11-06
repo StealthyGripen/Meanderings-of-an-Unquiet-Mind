@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Website title -->
+    <title>▐ │ │ │ │</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/exp1style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Poppins:400,700" rel="stylesheet">
+
+    <!-- p5.js scripts -->
+    <script type="text/javascript" src="js/p5.js"></script>
+    <script type="text/javascript" src="js/p5.dom.js"></script>
+    <script type="text/javascript" src="js/p5.sound.js"></script>
+
+    <!-- P5.js experiment -->
+    <script type="text/javascript" src="js/experiment1.js"></script>
+
+</head>
+
+<!-- Experiment 1 -->
+
+<body class="experiment1">
+    <!-- Experiment container -->
+    <div id="sketch-holder"></div>
+
+    <!-- Description overlay -->
+    <div id="myNav" class="overlay" onclick="closeNav()">
+        <div class="overlay-content">
+            <!-- Poem type -->
+            <h2 class="poemdescr1">Lune</h2>
+            <!-- Poem description -->
+            <h4 class="poemdescr2">known as the American Haiku,
+                <br> with an open subject matter and
+                <br> a slightly different rhymhing pattern
+                <br>
+                <br>5 │ 3 │ 5
+                <br>syllable pattern
+            </h4>
+            <!-- Overlay close button -->
+            <img src="img/closebtnblk.png" onclick="openNav()" class="closeicon">
+        </div>
+    </div>
+
+    <!-- Overlay open button -->
+    <div class="morebtn">
+        <img src="img/morebtnblk.png" onclick="openNav()" class="moreicon">
+    </div>
+
+    <!-- Audio mute button -->
+    <div id="mutebtn">
+        <!-- Audio icon -->
+        <img src="img/audiobtn.png" id="muteicon">
+        <!-- Audio mute icon -->
+        <img src="img/audiobtnmute.png" id="muteiconalt">
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="nav">
+        <!-- Navbox 1 -->
+        <a href="" class="navboxes navbox1">
+            <div class="vertblocks vert1"></div>
+        </a>
+        <!-- Navbox 2 -->
+        <a href="experiment2.html" class="navboxes navbox2">
+            <div class="vertblocks vert2"></div>
+            <div class="horzblocks horz1"></div>
+            <div class="horzhide hhide"></div>
+        </a>
+        <!-- Navbox 3 -->
+        <a href="experiment3.html" class="navboxes navbox3">
+            <div class="vertblocks vert3"></div>
+            <div class="horzblocks horz2"></div>
+            <div class="horzhide hhide"></div>
+        </a>
+        <!-- Navbox 4 -->
+        <a href="experiment4.html" class="navboxes navbox4">
+            <div class="vertblocks vert4"></div>
+            <div class="horzblocks horz3"></div>
+            <div class="horzhide hhide"></div>
+        </a>
+        <!-- Navbox 5 -->
+        <a href="experiment5.html" class="navboxes navbox5">
+            <div class="vertblocks vert5"></div>
+            <div class="horzblocks horz4"></div>
+            <div class="horzhide hhide"></div>
+        </a>
+    </div>
+
+    <!-- Poem -->
+    <div class="poemexp1">
+        <h3 class="poemlines1">lingering then gone</h3>
+        <h3 class="poemlines2">circling around</h3>
+        <h3 class="poemlines3">keeping sleep away</h3>
+    </div>
+
+</body>
+
+<!-- Fullscreen overlay script -->
+<script>
+    // Open overlay 
+    function openNav() {
+        document.getElementById("myNav").style.width = "32vw";
+    }
+    // Close overlay 
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+
+<!-- Audio player + mute script -->
+<script>
+    //Create variables
+    var audio, mutebtn, muteicon, muteiconalt;
+
+    //Initialize audioplayer
+    function initAudioPlayer() {
+        //Create new audio instance
+        audio = new Audio();
+        //Link in MP3 audio file
+        audio.src = "audio/Same_days_Blear_Moon.mp3";
+        //Set audio to loop
+        audio.loop = true;
+        //Set audio to play on load
+        audio.play();
+
+        //Object ID references
+        //Set variable mutebtn to id 'mutebtn'
+        mutebtn = document.getElementById("mutebtn");
+        //Set variable muteicon to id 'muteicon'
+        muteicon = document.getElementById("muteicon");
+        //Set variable muteiconalt to id 'muteiconalt'
+        muteiconalt = document.getElementById("muteiconalt");
+
+        //Create event listener
+        mutebtn.addEventListener("click", mute);
+
+        //Mute function
+        function mute() {
+            //Check if audio is muted
+            if (audio.muted) {
+                //Set muted to false
+                audio.muted = false;
+                //Show audio button
+                muteicon.style.display = "block";
+                //Hide audio muted button
+                muteiconalt.style.display = "none";
+            } else {
+                //Set muted to true
+                audio.muted = true;
+                //Hide audio button
+                muteicon.style.display = "none";
+                //Show audio muted button
+                muteiconalt.style.display = "block";
+            }
+        }
+    }
+    //Load audio player on window load
+    window.addEventListener("load", initAudioPlayer);
+</script>
+
+</html>

@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Website title -->
+    <title> │ │▐ │ │</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/exp3style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Poppins:400,700" rel="stylesheet">
+
+    <!-- p5.js scripts -->
+    <script type="text/javascript" src="js/p5.js"></script>
+    <script type="text/javascript" src="js/p5.dom.js"></script>
+    <script type="text/javascript" src="js/p5.sound.js"></script>
+
+    <!-- P5.js experiment -->
+    <script language="javascript" type="text/javascript" src="js/experiment3.js"></script>
+
+    <!-- Particle script -->
+    <script language="javascript" type="text/javascript" src="js/particle.js"></script>
+
+</head>
+
+<!-- Experiment 3 -->
+
+<body class="experiment3">
+
+    <!-- Fade page in script -->
+    <script>
+        document.body.className += ' fade-out';
+    </script>
+    <!-- Experiment container -->
+    <div id="sketch-holder"></div>
+
+    <!-- Description overlay -->
+    <div id="myNav" class="overlay" onclick="closeNav()">
+        <div class="overlay-content">
+            <h2 class="poemdescr1">Nonet</h2>
+            <h4 class="poemdescr2">a nine line poem with nine syllables
+                <br>in the first line, decreasing by one until
+                <br> only a single syllable is left in the last line
+                <br>
+                <br>9 │ 8 │ 7 │ 6 │ 5 │ 4 │ 3 │ 2 │ 1
+                <br>syllable pattern
+            </h4>
+            <!-- Overlay close button -->
+            <img src="img/closebtnblk.png" onclick="openNav()" class="closeicon">
+        </div>
+    </div>
+
+    <!-- Overlay open button -->
+    <div class="morebtn">
+        <img src="img/morebtnblk.png" onclick="openNav()" class="moreicon">
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="nav">
+<a href="index.html#3" class="navboxes navbox1">
+            <div class="vertblocks vert1"></div>
+            <div class="horzblocks horz1"></div>
+            <div class="horzhide hhide1"></div>
+        </a>
+        <a href="experiment2.html" class="navboxes navbox2">
+            <div class="vertblocks vert2"></div>
+            <div class="horzblocks horz2"></div>
+            <div class="horzhide hhide1"></div>
+        </a>
+        <a href="experiment3.html" class="navboxes navbox3">
+            <div class="vertblocks vert3"></div>
+        </a>
+        <a href="experiment4.html" class="navboxes navbox4">
+            <div class="vertblocks vert4"></div>
+            <div class="horzblocks horz3"></div>
+            <div class="horzhide hhide"></div>
+        </a>
+        <a href="experiment5.html" class="navboxes navbox5">
+            <div class="vertblocks vert5"></div>
+            <div class="horzblocks horz4"></div>
+            <div class="horzhide hhide"></div>
+        </a>
+    </div>
+
+    <!-- Text tapers down -->
+    <div class="magicninepoem">
+        <h4 class="ninelines" style="font-size: 1.85vw">swirling slowly, winding and twisting</h4>
+        <h4 class="ninelines" style="font-size: 1.75vw">memories from forgotten times</h4>
+        <h4 class="ninelines" style="font-size: 1.63vw">appear in the darkest hours</h4>
+        <h4 class="ninelines" style="font-size: 1.51vw">their unyielding clutches</h4>
+        <h4 class="ninelines" style="font-size: 1.38vw">searching for ways to </h4>
+        <h4 class="ninelines" style="font-size: 1.26vw">loosen the very</h4>
+        <h4 class="ninelines" style="font-size: 1.14vw">shackles that</h4>
+        <h4 class="ninelines" style="font-size: 1.02vw">bind such</h4>
+        <h4 class="ninelines" style="font-size: 0.9vw">thought</h4>
+    </div>
+
+
+    <!--Jquery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $('body').removeClass('fade-out');
+        });
+    </script>
+
+
+    <!-- Fullscreen overlay script -->
+    <script>
+        // Open overlay 
+        function openNav() {
+            document.getElementById("myNav").style.width = "34vw";
+        }
+        // Close overlay 
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <!-- Audio player + mute script -->
+    <script>
+        //Create variables
+        var audio;
+
+        //Initialize audioplayer
+        function initAudioPlayer() {
+            //Create new audio instance
+            audio = new Audio();
+            //Link in MP3 audio file
+            audio.src = "audio/Sera_Blear_Moon.mp3";
+            //Set audio to loop
+            audio.loop = true;
+            //Set audio to play on load
+            audio.play();
+
+        }
+        //Load audio player on window load
+        window.addEventListener("load", initAudioPlayer);
+    </script>
+</body>
+
+</html>

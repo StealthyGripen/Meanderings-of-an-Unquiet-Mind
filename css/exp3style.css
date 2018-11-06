@@ -1,0 +1,336 @@
+/* Experiemnt 3 stylesheet */
+
+.experiment3 {
+    background-color: rgb(255, 255, 255);
+    /* cursor: url(../img/arrowblk.png) 20 20, auto; */
+}
+
+.nav {
+    width: 20vw;
+    height: 8vh;
+    margin-top: 90vh;
+    margin-left: 40vw;
+    position: fixed;
+    background-color: #000000;
+}
+
+.navboxes {
+    width: 4vw;
+    height: 8vh;
+    position: fixed;
+    /* cursor: url(../img/arrowblk.png) 20 20, auto; */
+}
+
+.navbox2 {
+    margin-left: 4vw;
+}
+
+.navbox3 {
+    margin-left: 8vw;
+}
+
+.navbox4 {
+    margin-left: 12vw;
+}
+
+.navbox5 {
+    margin-left: 16vw;
+}
+
+.horzhide {
+    z-index: 998;
+    transition-duration: 250ms;
+    height: 0.2vh;
+    width: 0vh;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    margin-top: 4vh;
+    margin-left: -1.8vw;
+}
+
+.vertblocks {
+    height: 4vh;
+    width: 0.3vh;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    margin-top: 2vh;
+    margin-left: 2vw;
+    z-index: 999;
+    transition-duration: 500ms;
+}
+
+.vert1,
+.vert2,
+.vert4,
+.vert5 {
+    background-color: #4b4b4b;
+}
+
+.horzblocks {
+    height: 0.2vh;
+    width: 0vh;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    margin-top: 4vh;
+    margin-left: -1.8vw;
+    z-index: 997;
+    transition-delay: 250ms;
+    transition-duration: 250ms;
+}
+
+.horz1 {
+    width: 3.9vw;
+    margin-left: 2.1vw;
+    background-color: #ffffff;
+    transition-delay: 0ms;
+    transition-duration: 0ms;
+}
+
+.navbox1:hover .horz1 {
+    width: 0vh;
+    transition-delay: 250ms;
+    transition-duration: 250ms;
+}
+
+.hhide1 {
+    margin-left: 2.1vw;
+    width: 3.9vw;
+    transition-duration: 250ms;
+}
+
+.navbox1:hover .hhide1 {
+    width: 0vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbox1:hover .vert1 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: #ffffff;
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+}
+
+.navbox3:hover .vert3 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: rgb(255, 255, 255);
+    transition-delay: 100ms;
+    transition-duration: 250ms;
+}
+
+.horz2 {
+    width: 3.9vw;
+    margin-left: 2.1vw;
+    background-color: #ffffff;
+    transition-delay: 0ms;
+    transition-duration: 0ms;
+}
+
+.navbox2:hover .horz2 {
+    width: 0vh;
+    transition-delay: 250ms;
+    transition-duration: 250ms;
+}
+
+.hhide1 {
+    margin-left: 2.1vw;
+    width: 3.9vw;
+    transition-duration: 250ms;
+}
+
+.navbox2:hover .hhide1 {
+    width: 0vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbox2:hover .vert2 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: #ffffff;
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+}
+
+.navbox4:hover .horz3 {
+    width: 3.9vw;
+    background-color: #ffffff;
+    transition-duration: 250ms;
+}
+
+.navbox4:hover .vert4 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: #ffffff;
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+}
+
+.navbox4:hover .hhide {
+    width: 3.9vw;
+    background-color: rgb(0, 0, 0);
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+}
+
+.navbox5:hover .horz4 {
+    width: 3.9vw;
+    background-color: #ffffff;
+    transition-duration: 250ms;
+}
+
+.navbox5:hover .vert5 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: #ffffff;
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+}
+
+.navbox5:hover .hhide {
+    width: 3.9vw;
+    background-color: rgb(0, 0, 0);
+    transition-duration: 250ms;
+    transition-delay: 500ms;
+}
+
+.magicninepoem {
+    padding: 0%;
+    margin: 0%;
+    position: fixed;
+    width: 33.3vw;
+    height: 70vh;
+    margin-left: 33.3vw;
+    margin-top: 8vh;
+}
+
+.ninelines {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 5vh;
+}
+
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    transition: 400ms;
+    /* cursor: url(../img/arrow.png) 20 20, auto; */
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    margin-top: 47vh;
+    margin-left: 0.5vw;
+    font-size: 60px;
+}
+
+.closebtn {
+    width: 5vh;
+    height: 5vh;
+    z-index: 998;
+    transform: rotateZ(45deg);
+    transition: 250ms;
+}
+
+.closebtn:hover {
+    margin-left: 0.8%;
+    width: 5.4vh;
+    transition: 250ms;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.morebtn {
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    margin-top: 47vh;
+    margin-left: 0.5vw;
+    z-index: 998;
+}
+
+.moreicon {
+    position: fixed;
+    width: 5vh;
+    margin-top: 0%;
+    margin-left: 0vw;
+    transition: 250ms;
+}
+
+.morebtn:hover .moreicon {
+    margin-left: 0.8%;
+    width: 5.4vh;
+    transition: 250ms;
+}
+
+#sketch-holder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.poemdescr1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Averia Serif Libre',
+        cursive;
+    font-weight: 700;
+}
+
+.poemdescr2 {
+    color: #ffffff;
+    font-family: 'Averia Serif Libre',
+        cursive;
+    font-weight: 300;
+    margin-bottom: 13vh;
+}
+
+#mutebtn {
+    position: fixed;
+    width: 5vw;
+    margin-top: 1vh;
+    margin-left: 50vw;
+}

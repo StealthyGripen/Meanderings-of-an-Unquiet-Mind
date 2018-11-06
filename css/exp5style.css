@@ -1,0 +1,429 @@
+/* Experiemnt 5 stylesheet */
+.experiment5 {
+    background-color: #ffffff;
+    /* cursor: url(../img/arrowblk.png) 20 20, auto; */
+}
+
+.nav {
+    width: 20vw;
+    height: 8vh;
+    margin-top: 90vh;
+    margin-left: 40vw;
+    position: fixed;
+    background-color: #ffffffc4;
+}
+
+.navboxes {
+    width: 4vw;
+    height: 8vh;
+    position: fixed;
+    /* cursor: url(../img/arrowblk.png) 20 20, auto; */
+}
+
+.navbox2 {
+    margin-left: 4vw;
+}
+
+.navbox3 {
+    margin-left: 8vw;
+}
+
+.navbox4 {
+    margin-left: 12vw;
+}
+
+.navbox5 {
+    margin-left: 16vw;
+}
+
+.horzhide {
+    z-index: 998;
+    transition-duration: 250ms;
+    height: 0.2vh;
+    width: 0vh;
+    position: fixed;
+    background-color: #ffffff;
+    margin-top: 4vh;
+    margin-left: -1.8vw;
+}
+
+.vertblocks {
+    height: 4vh;
+    width: 0.3vh;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    margin-top: 2vh;
+    margin-left: 2vw;
+    z-index: 999;
+    transition-duration: 500ms;
+}
+
+.vert1,
+.vert2,
+.vert3,
+.vert4 {
+    background-color: #d3d1d1;
+}
+
+.horzblocks {
+    height: 0.2vh;
+    width: 0vh;
+    position: fixed;
+    background-color: #ffffff;
+    margin-top: 4vh;
+    margin-left: -1.8vw;
+    z-index: 997;
+    transition-delay: 250ms;
+    transition-duration: 250ms;
+}
+
+.horz1 {
+    width: 3.9vw;
+    margin-left: 2.1vw;
+    background-color: rgb(22, 22, 22);
+    transition-delay: 0ms;
+    transition-duration: 0ms;
+}
+
+.navbox1:hover .horz1 {
+    width: 0vh;
+    transition-delay: 250ms;
+    transition-duration: 250ms;
+}
+
+.hhide1 {
+    margin-left: 2.1vw;
+    width: 3.9vw;
+    transition-duration: 250ms;
+}
+
+.navbox1:hover .hhide1 {
+    width: 0vh;
+    background-color: rgb(22, 22, 22);
+}
+
+.navbox1:hover .vert1 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: rgb(22, 22, 22);
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+}
+
+.navbox5:hover .vert5 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: rgb(0, 0, 0);
+    transition-delay: 100ms;
+    transition-duration: 250ms;
+}
+
+.horz2 {
+    width: 3.9vw;
+    margin-left: 2.1vw;
+    background-color: rgb(22, 22, 22);
+    transition-delay: 0ms;
+    transition-duration: 0ms;
+}
+
+.navbox2:hover .horz2 {
+    width: 0vh;
+    transition-delay: 250ms;
+    transition-duration: 250ms;
+}
+
+.hhide1 {
+    margin-left: 2.1vw;
+    width: 3.9vw;
+    transition-duration: 250ms;
+}
+
+.navbox2:hover .hhide1 {
+    width: 0vh;
+    background-color: rgb(22, 22, 22);
+}
+
+.navbox2:hover .vert2 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: rgb(22, 22, 22);
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+}
+
+.horz3 {
+    width: 3.9vw;
+    margin-left: 2.1vw;
+    background-color: rgb(22, 22, 22);
+    transition-delay: 0ms;
+    transition-duration: 0ms;
+}
+
+.navbox3:hover .horz3 {
+    width: 0vh;
+    transition-delay: 250ms;
+    transition-duration: 250ms;
+}
+
+.hhide1 {
+    margin-left: 2.1vw;
+    width: 3.9vw;
+    transition-duration: 250ms;
+}
+
+.navbox3:hover .hhide1 {
+    width: 0vh;
+    background-color: rgb(22, 22, 22);
+}
+
+.navbox3:hover .vert3 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: rgb(22, 22, 22);
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+}
+
+.horz4 {
+    width: 3.9vw;
+    margin-left: 2.1vw;
+    background-color: rgb(22, 22, 22);
+    transition-delay: 0ms;
+    transition-duration: 0ms;
+}
+
+.navbox4:hover .horz4 {
+    width: 0vh;
+    transition-delay: 250ms;
+    transition-duration: 250ms;
+}
+
+.hhide1 {
+    margin-left: 2.1vw;
+    width: 3.9vw;
+    transition-duration: 250ms;
+}
+
+.navbox4:hover .hhide1 {
+    width: 0vh;
+    background-color: rgb(22, 22, 22);
+}
+
+.navbox4:hover .vert4 {
+    height: 8vh;
+    margin-top: 0vh;
+    background-color: rgb(22, 22, 22);
+    transition-delay: 250ms;
+    transition-duration: 500ms;
+}
+
+.poemexp5 {
+    position: absolute;
+    width: 28%;
+    height: 50%;
+    margin-top: 14%;
+    margin-left: 38vw;
+}
+
+.inkpoem1,
+.inkpoem2,
+.inkpoem3,
+.inkpoem4,
+.inkpoem5 {
+    margin-top: 1vh;
+    color: #000000;
+    transition: 250ms;
+}
+
+.poemexp5:hover .inkpoem {
+    transition: 250ms;
+    opacity: 0;
+}
+
+.inkpoem21 {
+    margin-top: -43vh;
+    color: #ffffff;
+    transition: 250ms;
+    opacity: 0;
+}
+
+.inkpoem22,
+.inkpoem23,
+.inkpoem24,
+.inkpoem25 {
+    margin-top: 1vh;
+    color: #ffffff;
+    transition: 250ms;
+    opacity: 0;
+}
+
+.poemexp5:hover .inkpoem-2 {
+    transition: 250ms;
+    opacity: 1;
+}
+
+/* .inkpoem2 {
+    display: none;
+    margin-left: 40vw;
+    transition-delay: 500ms;
+}
+
+.poemexp5:hover .inkpoem2 {
+    color: rgb(255, 255, 255);
+    display: block;
+    transition-delay: 500ms;
+} */
+
+.overlay {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    transition: 400ms;
+    /* cursor: url(../img/arrow.png) 20 20, auto; */
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    margin-top: 47vh;
+    margin-left: 0.5vw;
+    font-size: 60px;
+}
+
+.closebtn {
+    width: 5vh;
+    height: 5vh;
+    z-index: 998;
+    transform: rotateZ(45deg);
+    transition: 250ms;
+}
+
+.closebtn:hover {
+    margin-left: 0.8%;
+    width: 5.4vh;
+    transition: 250ms;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+span {
+    position: fixed;
+    background-color: aqua
+}
+
+.morebtn {
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    margin-top: 47vh;
+    margin-left: 0.5vw;
+    z-index: 998;
+}
+
+.moreicon {
+    position: fixed;
+    width: 5vh;
+    margin-top: 0%;
+    margin-left: 0vw;
+    transition: 250ms;
+}
+
+.morebtn:hover .moreicon {
+    margin-left: 0.8%;
+    width: 5.4vh;
+    transition: 250ms;
+}
+
+.homebtn {
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    margin-top: 47vh;
+    margin-left: 97vw;
+    z-index: 998;
+}
+
+.homeicon {
+    position: fixed;
+    width: 5vh;
+    margin-top: 0%;
+    margin-left: 0vw;
+    transition: 250ms;
+}
+
+.homebtn:hover .homeicon {
+    margin-left: -0.8%;
+    width: 5.4vh;
+    transition: 250ms;
+}
+
+/* Experiment container */
+#sketch-holder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* Poem descriptions */
+.poemdescr1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Averia Serif Libre',
+        cursive;
+    font-weight: 700;
+}
+
+.poemdescr2 {
+    color: #ffffff;
+    font-family: 'Averia Serif Libre',
+        cursive;
+    font-weight: 300;
+    margin-bottom: 26vh;
+}
+
+#mutebtn {
+    position: fixed;
+    width: 5vw;
+    margin-top: 1vh;
+    margin-left: 50vw;
+}

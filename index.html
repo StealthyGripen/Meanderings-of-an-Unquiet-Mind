@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>meanderings of an unquiet mind</title>
+    <link rel="stylesheet" href="css/style.css">
+
+<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- Averia Serif Libre font -->
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,700" rel="stylesheet">
+
+    <!-- p5.js scripts -->
+    <script type="text/javascript" src="js/p5.js"></script>
+    <script type="text/javascript" src="js/p5.dom.js"></script>
+    <script type="text/javascript" src="js/p5.sound.js"></script>
+
+    <!-- P5.js Experiments -->
+    <script type="text/javascript" src="js/experiment1.js"></script>
+
+    <!-- Experiments CSS -->
+    <link rel="stylesheet" href="css/exp1style.css">
+</head>
+
+<body>
+    <!-- Fade page in script -->
+    <script>
+        document.body.className += ' fade-out';
+    </script>
+
+    <!-- Main Page -->
+    <div class="section">
+        <h2 class="maintitle">meanderings of an unquiet mind
+        </h2>
+        <h3 class="titletext titletext1">experimental poetry</h3>
+        <img src="img/scrollarrow.gif" class="scrollarrow">
+    </div>
+
+    <!-- Description Page -->
+    <div class="section">
+        <h3 class="titletext titletext2">The following is a composite of generative art, poetry and code. The
+            experience will cover
+            several different styles of short-form poetry, all centered around the theme of sleeplessness and insomnia.
+            <br><br>Some of
+            the pieces are interactive, while others unfold before your eyes. Take a moment, relax and
+            experience the bounds of your screen.
+        </h3>
+        <img src="img/scrollarrow.gif" class="scrollarrow">
+    </div>
+
+    <!-- Experiment 1  -->
+    <div class="section exp-section-1 page-1">
+        <!-- Description overlay -->
+        <div id="exp1" class="explainoverlay" onclick="exp1closeNav()">
+            <div class="explaincontent">
+                <h3 class="exp4text1">Click to begin</h3>
+            </div>
+        </div>
+        <!-- Experiment container -->
+        <div id="sketch-holder-1"></div>
+
+
+        <!-- Description overlay -->
+        <div id="more-info-1" class="overlay-1" onclick="closeNav1()">
+            <div class="overlay-1-content">
+                <!-- Poem type -->
+                <h2 class="poemdescr1-1">Lune</h2>
+                <!-- Poem description -->
+                <h4 class="poemdescr2-1">known as the American Haiku,
+                    <br> with an open subject matter and
+                    <br> a slightly different rhymhing pattern
+                    <br>
+                    <br>5 │ 3 │ 5
+                    <br>syllable pattern
+                </h4>
+                <!-- Overlay close button -->
+                <img src="img/closebtnblk.png" onclick="openNav1()" class="closeicon-1">
+            </div>
+        </div>
+
+        <!-- Overlay open button -->
+        <div class="morebtn-1">
+            <img src="img/morebtnblk.png" onclick="openNav1()" class="moreicon-1">
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="nav-1">
+            <!-- Navbox 1 -->
+            <a href="#3" class="nav-1-boxes nav-1-box1">
+                <div class="vertblocks-1 vert1-1"></div>
+            </a>
+            <!-- Navbox 2 -->
+            <a href="experiment2.html" class="nav-1-boxes nav-1-box2">
+                <div class="vertblocks-1 vert2-1"></div>
+                <div class="horzblocks-1 horz1-1"></div>
+                <div class="horzhide-1 hhide-1"></div>
+            </a>
+            <!-- Navbox 3 -->
+            <a href="experiment3.html" class="nav-1-boxes nav-1-box3">
+                <div class="vertblocks-1 vert3-1"></div>
+                <div class="horzblocks-1 horz2-1"></div>
+                <div class="horzhide-1 hhide-1"></div>
+            </a>
+            <!-- Navbox 4 -->
+            <a href="experiment4.html" class="nav-1-boxes nav-1-box4">
+                <div class="vertblocks-1 vert4-1"></div>
+                <div class="horzblocks-1 horz3-1"></div>
+                <div class="horzhide-1 hhide-1"></div>
+            </a>
+            <!-- Navbox 5 -->
+            <a href="experiment5.html" class="nav-1-boxes nav-1-box5">
+                <div class="vertblocks-1 vert5-1"></div>
+                <div class="horzblocks-1 horz4-1"></div>
+                <div class="horzhide-1 hhide-1"></div>
+            </a>
+        </div>
+
+        <a href="index.html#2"> <img src="img/scrollarrow.gif" class="scrollarrow next-exp"></a>
+        <!-- Poem -->
+        <div class="poemexp1">
+            <h3 class="poemlines1">lingering then gone</h3>
+            <h3 class="poemlines2">circling around</h3>
+            <h3 class="poemlines3">keeping sleep away</h3>
+        </div>
+    </div>
+
+    <!-- Credits Page -->
+    <div class="section credits-page">
+        <img src="img/scrollarrow.gif" class="scrollarrow credits-scroll">
+        <h3 class="p5-words">This experience was created using
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, a
+            JavaScript
+            framework based on the
+            <strong>Processing</strong>
+            project.
+        </h3>
+        <a target="_blank" rel="noopener noreferrer" href="https://p5js.org/">
+            <img src="img/p5jslogo.png" class="p5-logo"> </a>
+
+        <div class="music-words">
+            <img class="album-art" src="img/Blear_Moon_-_Symbolic_seclusion_-_2018070523025239.jpg" alt="">
+            <h3 class="music-text"><br>
+                Music by <strong>Blear Moon</strong> from the album <strong>Symbloic seclusion</strong> <br>
+                <br>Available on <a class="fma-link" target="_blank" rel="noopener noreferrer" href="https://freemusicarchive.org/music/Blear_Moon/Symbolic_seclusion/">Free
+                    Music Archive</a></h3>
+        </div>
+
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Scrollify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+    <!-- Screenfull -->
+    <script src="js/screenfull.js"></script>
+    <!-- In-View -->
+    <script src="js/in-view.min.js"></script>
+
+    <!-- Scrollify script -->
+    <script>
+        $(function () {
+            $.scrollify({
+                section: ".section",
+                easing: "easeOutExpo",
+                scrollSpeed: 900,
+                offset: 20,
+                scrollbars: true,
+            });
+        });
+    </script>
+
+    <!-- Fullscreen overlay script -->
+    <script>
+        // Open overlay 
+        function openNav1() {
+            document.getElementById("more-info-1").style.width = "32vw";
+        }
+        // Close overlay 
+        function closeNav1() {
+            document.getElementById("more-info-1").style.width = "0%";
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $('body').removeClass('fade-out');
+        });
+    </script>
+
+    <script>
+        //Create variables
+        var audio;
+
+        //Initialize audioplayer
+        function initAudioPlayer() {
+            //Create new audio instance
+            audio = new Audio();
+            //Link in MP3 audio file
+            audio.src = "audio/Same_days_Blear_Moon.mp3";
+            //Set audio to loop
+            audio.loop = true;
+        }
+        // Close overlay
+        function exp1closeNav() {
+            document.getElementById("exp1").style.display = "none";
+            //Set audio to play on load
+            audio.play();
+        }
+        //Load audio player on window load
+        window.addEventListener("load", initAudioPlayer);
+    </script>
+</body>
