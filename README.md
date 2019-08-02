@@ -1,4 +1,4 @@
-# Meanderings-of-an-Unquiet-Mind
+# Meanderings of an Unquiet Mind
 
 An experimental website created using p5.js. It can be viewed at this link:
 
